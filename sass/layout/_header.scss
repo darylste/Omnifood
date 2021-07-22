@@ -1,0 +1,74 @@
+.header {
+    background-image: linear-gradient(to top, 
+                                 rgba(0, 0, 0, .3), 
+                                 rgba(0, 0, 0, .6)),
+                                 url(/images/hero.jpg);
+    background-size: cover;
+    color: var(--color-white);
+
+    height: 95vh;
+
+    &__header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 7.5rem;
+
+    }
+
+    &__logo {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+.navigation {
+    &__list {
+        
+        display: flex;
+        list-style: none;
+
+    }
+
+    &__item{
+        font-size: 1.75em;
+        font-weight: 70;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: .5rem;
+
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+
+        &:hover {
+            border-bottom: .2rem solid var(--color-primary);
+        }
+
+        &:active {
+            background-color: var(--color-primary);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        padding: 1rem 2rem;
+        border-radius: 100px;
+
+    }
+}
+
+.hero {
+    margin-top: 10rem;
+    margin-left: 20rem;
+
+    &__text {
+        font-size: 3rem;
+        word-spacing: 4px;
+    }
+
+    &__text-box {
+        padding-bottom: 3rem;
+    }
+}

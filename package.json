@@ -4,7 +4,7 @@
   "description": "Landing page for Omnifood",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass saas/main.scss css/style.css -w",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:sass": "node-sass saas/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/iconfont.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/darylste/Natours.git"
+    "url": "git+https://github.com/darylste/Omnifood.git"
   },
   "author": "Daryl Stensland",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/darylste/Natours/issues"
+    "url": "https://github.com/darylste/Omnifood/issues"
   },
   "homepage": "",
   "devDependencies": {

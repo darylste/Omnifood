@@ -1,0 +1,17 @@
+.button{
+    text-decoration: none;
+    padding :1rem 3rem;
+    border: 1.5px solid var(--color-primary);
+    border-radius: 10rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+
+    &--main {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+    }
+
+    &--secondary {
+        color: var(--color-primary);
+    }
+}
