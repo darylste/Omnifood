@@ -4,6 +4,7 @@
 
 .feature {
     padding: 8rem 0;
+
     &__text-box {
         display: flex;
         flex-direction: column;
@@ -79,5 +80,92 @@
             opacity: 1;
             transform: scale(1.2);
         }
+    }
+}
+
+/* --------------------------------------
+        CONCEPT SECTION
+-------------------------------------- */
+
+.concept {
+    padding: 8rem 0;
+    background-color: var(--color-grey-light-1);
+
+    &__heading-box {
+
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+    &__img-container {   
+        height: 40rem;
+    }
+
+    &__img {
+        height: 100%;
+    }
+
+    &__step-container {
+        margin-left: 6rem;
+    }
+
+    &__step {
+        display: flex;
+        align-items: center;
+         
+        &-number-box {
+            position: relative;
+            font-size: 2rem;
+            margin: 2rem 2rem 2rem 0;
+            height: 5rem;
+            width: 5rem;
+
+            border: 1px solid var(--color-primary);
+            border-radius: 100rem;
+        }
+
+        &-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            color: var(--color-primary);
+        }
+
+        &--text {
+
+        }
+
+        &--description {
+
+        }
+    }
+}
+
+.download-links {
+    display: flex;
+    justify-content: center;
+    
+
+    & > * {
+        height: 5rem;
+        width: 10rem;
+        
+    }
+
+    &__text {
+        display: block;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    &__android {
+
     }
 }

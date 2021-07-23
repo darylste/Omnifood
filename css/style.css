@@ -195,3 +195,49 @@ ion-icon {
     .gallery__img:hover {
       opacity: 1;
       transform: scale(1.2); }
+
+/* --------------------------------------
+        CONCEPT SECTION
+-------------------------------------- */
+.concept {
+  padding: 8rem 0;
+  background-color: var(--color-grey-light-1); }
+  .concept__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem; }
+  .concept__img-container {
+    height: 40rem; }
+  .concept__img {
+    height: 100%; }
+  .concept__step-container {
+    margin-left: 6rem; }
+  .concept__step {
+    display: flex;
+    align-items: center; }
+    .concept__step-number-box {
+      position: relative;
+      font-size: 2rem;
+      margin: 2rem 2rem 2rem 0;
+      height: 5rem;
+      width: 5rem;
+      border: 1px solid var(--color-primary);
+      border-radius: 100rem; }
+    .concept__step-number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--color-primary); }
+
+.download-links {
+  display: flex;
+  justify-content: center; }
+  .download-links > * {
+    height: 5rem;
+    width: 10rem; }
+  .download-links__text {
+    display: block;
+    text-align: center;
+    margin: 2rem 0; }
