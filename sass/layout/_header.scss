@@ -27,36 +27,49 @@
     &__list {
         
         display: flex;
+        justify-content: center;
         list-style: none;
 
     }
 
     &__item{
+        position: relative;
         font-size: 1.75em;
         font-weight: 70;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding-bottom: .5rem;
+        
 
         &:not(:last-child) {
             margin-right: 2.5rem;
         }
 
-        &:hover {
-            border-bottom: .2rem solid var(--color-primary);
-        }
-
-        &:active {
-            background-color: var(--color-primary);
-        }
     }
 
     &__link {
         text-decoration: none;
         color: inherit;
-        padding: 1rem 2rem;
+        margin: 1rem 2rem;
         border-radius: 100px;
 
+        &:after {
+            content: "";
+            display: block;
+            margin-top: .5rem;
+            width: 50%;
+            height: 1px;
+            background-color: transparent;
+
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        &:hover:after {
+            background-color: var(--color-primary);
+        }
     }
 }
 
@@ -65,11 +78,12 @@
     margin-left: 20rem;
 
     &__text {
-        font-size: 3rem;
+        font-size: 4.5rem;
         word-spacing: 4px;
     }
 
     &__text-box {
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
     }
+
 }

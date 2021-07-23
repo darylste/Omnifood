@@ -61,12 +61,16 @@ h3 {
   font-size: 1.2rem;
   margin-bottom: 1.5rem; }
 
+.u-margin-left {
+  margin-left: 3rem; }
+
 .button {
   text-decoration: none;
   padding: 1rem 3rem;
   border: 1.5px solid var(--color-primary);
   border-radius: 10rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 300;
   letter-spacing: .5px; }
   .button--main {
     color: var(--color-white);
@@ -91,32 +95,42 @@ h3 {
 
 .navigation__list {
   display: flex;
+  justify-content: center;
   list-style: none; }
 
 .navigation__item {
+  position: relative;
   font-size: 1.75em;
   font-weight: 70;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  padding-bottom: .5rem; }
+  text-transform: uppercase; }
   .navigation__item:not(:last-child) {
     margin-right: 2.5rem; }
-  .navigation__item:hover {
-    border-bottom: 0.2rem solid var(--color-primary); }
-  .navigation__item:active {
-    background-color: var(--color-primary); }
 
 .navigation__link {
   text-decoration: none;
   color: inherit;
-  padding: 1rem 2rem;
+  margin: 1rem 2rem;
   border-radius: 100px; }
+  .navigation__link:after {
+    content: "";
+    display: block;
+    margin-top: .5rem;
+    width: 50%;
+    height: 1px;
+    background-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .navigation__link:hover:after {
+    background-color: var(--color-primary); }
 
 .hero {
   margin-top: 10rem;
   margin-left: 20rem; }
   .hero__text {
-    font-size: 3rem;
+    font-size: 4.5rem;
     word-spacing: 4px; }
   .hero__text-box {
-    padding-bottom: 3rem; }
+    padding-bottom: 4rem; }
