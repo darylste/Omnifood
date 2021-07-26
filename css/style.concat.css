@@ -195,7 +195,7 @@ ion-icon {
     text-align: center; }
 
 .header {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./images/hero.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../images/hero.jpg);
   background-size: cover;
   background-position: center;
   color: var(--color-white);
