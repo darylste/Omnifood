@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     border-top: 1px solid var(--color-grey-light-1);
 
+    @include respond (tab-port) {
+        width: 100%;
+    }
+
     &__img-container {
         width: 25%;
         overflow: hidden;

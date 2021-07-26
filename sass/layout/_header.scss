@@ -1,7 +1,7 @@
 .header {
     background-image: linear-gradient(to top, 
-                                 rgba(0, 0, 0, .3), 
-                                 rgba(0, 0, 0, .6)),
+                                 rgba(0, 0, 0, .5), 
+                                 rgba(0, 0, 0, .7)),
                                  url(/images/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -9,26 +9,51 @@
 
     height: 95vh;
 
+    @include respond (phone-land) {
+        height: 75vh;
+    }
+
+    @include respond (phone-port) {
+        height: 70vh;
+    }
+
     &__header-container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding: 3rem 7.5rem;
+
+        @include respond (tab-port) {
+            padding: 3rem 1rem;
+        }
 
     }
 
     &__logo {
         width: 10rem;
         height: 10rem;
+
+        @include respond (tab-port) {
+            margin: 0 auto 4rem auto;
+        }
     }
 }
 
 .navigation {
+
+    @include respond (tab-port) {
+        width: 100%;
+    }
     &__list {
         
         display: flex;
         justify-content: center;
         list-style: none;
+
+        @include respond (tab-port) {
+            width: 100%;
+        }
 
     }
 
@@ -39,10 +64,13 @@
         letter-spacing: 1px;
         text-transform: uppercase;
 
+        @include respond (tab-port) {
+            display: flex;
+        }
+
         &:not(:last-child) {
             margin-right: 2.5rem;
         }
-
     }
 
     &__link {
@@ -73,8 +101,8 @@
 }
 
 .hero {
-    margin-top: 10rem;
-    margin-left: 20rem;
+    margin-top: 10%;
+    margin-left: 7.5%;
 
     &__text-box {
         padding-bottom: 4rem;

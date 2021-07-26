@@ -20,7 +20,12 @@
         transition: all .2s;
 
         @include respond (tab-land) {
-            width: 48%;
+            width: 35%;
+            margin: 2rem;
+        }
+
+        @include respond (tab-port) {
+            width: 85%;
         }
 
         &--title {
@@ -35,6 +40,10 @@
 
         &:hover {
             transform: translateY(-1.5rem) scale(1.02);
+            
+            @include respond (tab-port) {
+                transform: none;
+            }
         }
     }
 }
