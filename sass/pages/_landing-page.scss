@@ -91,10 +91,6 @@
     padding: 8rem 0;
     background-color: var(--color-grey-light-1);
 
-    &__heading-box {
-
-    }
-
     &__content {
         display: flex;
         justify-content: center;
@@ -137,14 +133,6 @@
 
             color: var(--color-primary);
         }
-
-        &--text {
-
-        }
-
-        &--description {
-
-        }
     }
 }
 
@@ -164,8 +152,8 @@
         text-align: center;
         margin: 2rem 0;
     }
-
-    &__android {
-
-    }
 }
+
+/* --------------------------------------
+        LOCATIONS SECTION
+-------------------------------------- */

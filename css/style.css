@@ -85,6 +85,40 @@ ion-icon {
   .button--secondary {
     color: var(--color-primary); }
 
+.locations__carousel {
+  display: flex;
+  margin: 7rem; }
+
+.locations__container {
+  width: 25%;
+  padding: 1rem; }
+
+.locations__img-container {
+  margin-bottom: 1.5rem; }
+
+.locations__img {
+  width: 100%; }
+
+.locations__city {
+  text-align: center; }
+
+.locations__text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .locations__text-container--customers, .locations__text-container--chefs, .locations__text-container--twitter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .75rem; }
+  .locations__text-container--icon {
+    font-size: 2rem;
+    margin: .5rem; }
+    .locations__text-container--icon:not(:first-child) {
+      margin-left: .5rem; }
+  .locations__text-container--text {
+    font-size: 1rem; }
+
 .header {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/images/hero.jpg);
   background-size: cover;
@@ -241,3 +275,7 @@ ion-icon {
     display: block;
     text-align: center;
     margin: 2rem 0; }
+
+/* --------------------------------------
+        LOCATIONS SECTION
+-------------------------------------- */
