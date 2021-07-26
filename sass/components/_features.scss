@@ -1,0 +1,40 @@
+.feature {
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 23%;
+        margin: 1rem;
+        padding: 3rem;
+        background-color: var(--color-grey-light-1);
+        transition: all .2s;
+
+        @include respond (tab-land) {
+            width: 48%;
+        }
+
+        &--title {
+            margin: 3rem 0 1rem 0;
+            text-align: center;
+        }
+
+        &--text {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.02);
+        }
+    }
+}

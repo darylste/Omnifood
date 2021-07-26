@@ -17,70 +17,6 @@
         padding-bottom: 5rem;
 
     }
-
-    &__cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 85%;
-        margin: 0 auto;
-        
-    }
-
-    &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 23%;
-        margin: 1rem;
-        padding: 3rem;
-        background-color: var(--color-grey-light-1);
-        transition: all .2s;
-
-        &--title {
-            margin: 3rem 0 1rem 0;
-        }
-
-        &--text {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        &:hover {
-            transform: translateY(-1.5rem)
-            scale(1.02);
-        }
-    }
-}
-
-/* --------------------------------------
-        GALLERY SECTION
--------------------------------------- */
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    border-top: 1px solid var(--color-grey-light-1);
-
-    &__img-container {
-        width: 25%;
-        overflow: hidden;
-        height: auto;
-    }
-
-    &__img {
-        width: 100%;
-        height: auto;
-        opacity: .8;
-        transform: scale(1.1);
-        transition: all .4s;
-
-        &:hover {
-            opacity: 1;
-            transform: scale(1.2);
-        }
-    }
 }
 
 /* --------------------------------------
@@ -95,15 +31,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 8rem;
+        margin-top: 3rem;
     }
 
     &__img-container {   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 40rem;
     }
 
     &__img {
-        height: 100%;
+        height: 80%;
+
+        @include respond (tab-port) {
+            display: none;
+        }
     }
 
     &__step-container {
@@ -137,20 +80,23 @@
 }
 
 .download-links {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
 
-    & > * {
-        height: 5rem;
-        width: 10rem;
+    &__icon{
+        height: 4rem;
+        width: 8rem;
+        color: var(--color-black);
+        margin-top: 1.5rem;
         
     }
 
     &__text {
         display: block;
-        text-align: center;
-        margin: 2rem 0;
+        font-weight: 600;
+        
     }
 }
 

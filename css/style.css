@@ -17,6 +17,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   box-sizing: border-box; }
@@ -85,19 +88,72 @@ ion-icon {
   .button--secondary {
     color: var(--color-primary); }
 
+.feature__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto; }
+
+.feature__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  margin: 1rem;
+  padding: 3rem;
+  background-color: var(--color-grey-light-1);
+  transition: all .2s; }
+  @media only screen and (max-width: 75em) {
+    .feature__card {
+      width: 48%; } }
+  .feature__card--title {
+    margin: 3rem 0 1rem 0;
+    text-align: center; }
+  .feature__card--text {
+    text-align: center;
+    padding: 2rem; }
+  .feature__card:hover {
+    transform: translateY(-1.5rem) scale(1.02); }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--color-grey-light-1); }
+  .gallery__img-container {
+    width: 25%;
+    overflow: hidden;
+    height: auto; }
+    @media only screen and (max-width: 75em) {
+      .gallery__img-container {
+        width: 50%; } }
+  .gallery__img {
+    width: 100%;
+    height: auto;
+    opacity: .8;
+    transform: scale(1.1);
+    transition: all .4s; }
+    .gallery__img:hover {
+      opacity: 1;
+      transform: scale(1.2); }
+
 .locations__carousel {
   display: flex;
   margin: 7rem; }
+  @media only screen and (max-width: 75em) {
+    .locations__carousel {
+      overflow: hidden; } }
 
 .locations__container {
-  width: 25%;
   padding: 1rem; }
 
 .locations__img-container {
   margin-bottom: 1.5rem; }
 
 .locations__img {
-  width: 100%; }
+  max-width: 100%;
+  min-width: 25rem; }
 
 .locations__city {
   text-align: center; }
@@ -110,6 +166,7 @@ ion-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: .75rem; }
   .locations__text-container--icon {
     font-size: 2rem;
@@ -117,7 +174,8 @@ ion-icon {
     .locations__text-container--icon:not(:first-child) {
       margin-left: .5rem; }
   .locations__text-container--text {
-    font-size: 1rem; }
+    font-size: 1rem;
+    text-align: center; }
 
 .header {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/images/hero.jpg);
@@ -185,50 +243,6 @@ ion-icon {
   .feature__description {
     width: 70%;
     padding-bottom: 5rem; }
-  .feature__cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 85%;
-    margin: 0 auto; }
-  .feature__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 23%;
-    margin: 1rem;
-    padding: 3rem;
-    background-color: var(--color-grey-light-1);
-    transition: all .2s; }
-    .feature__card--title {
-      margin: 3rem 0 1rem 0; }
-    .feature__card--text {
-      text-align: center;
-      padding: 2rem; }
-    .feature__card:hover {
-      transform: translateY(-1.5rem) scale(1.02); }
-
-/* --------------------------------------
-        GALLERY SECTION
--------------------------------------- */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid var(--color-grey-light-1); }
-  .gallery__img-container {
-    width: 25%;
-    overflow: hidden;
-    height: auto; }
-  .gallery__img {
-    width: 100%;
-    height: auto;
-    opacity: .8;
-    transform: scale(1.1);
-    transition: all .4s; }
-    .gallery__img:hover {
-      opacity: 1;
-      transform: scale(1.2); }
 
 /* --------------------------------------
         CONCEPT SECTION
@@ -240,11 +254,17 @@ ion-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8rem; }
+    margin-top: 3rem; }
   .concept__img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 40rem; }
   .concept__img {
-    height: 100%; }
+    height: 80%; }
+    @media only screen and (max-width: 56.25em) {
+      .concept__img {
+        display: none; } }
   .concept__step-container {
     margin-left: 6rem; }
   .concept__step {
@@ -266,15 +286,18 @@ ion-icon {
       color: var(--color-primary); }
 
 .download-links {
+  width: 100%;
   display: flex;
-  justify-content: center; }
-  .download-links > * {
-    height: 5rem;
-    width: 10rem; }
+  flex-direction: column;
+  align-items: center; }
+  .download-links__icon {
+    height: 4rem;
+    width: 8rem;
+    color: var(--color-black);
+    margin-top: 1.5rem; }
   .download-links__text {
     display: block;
-    text-align: center;
-    margin: 2rem 0; }
+    font-weight: 600; }
 
 /* --------------------------------------
         LOCATIONS SECTION
